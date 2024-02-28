@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>Cadastrar um Emprestimo</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/styles.css">
+    </head>
+    <body>
+        <div>
+            <h1>Cadastrar um Emprestimo</h1>
+            <form action="CriarEmprestimoServlet">
+                <p><label for="quantidade">Quantidade:</label>
+                    <input type="number" id="quantidade" name="quantidade" required></p>
+                <p><label for="data">Data:</label>
+                    <input type="date" id="data" name="data" required></p>
+                <p><label for="turno">Turno:</label>
+                    <input type="text" id="turno" name="turno" required></p>
+                <p><label for="horario">Horario:</label>
+                    <input type="time" id="horario" name="horario" required></p>
+                <p><label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" required></p>
+                <p><input type="submit" value="Confirmar"></p>
+            </form>
+            <p><a href="EmprestimosAtivosServlet">Empréstimos ativos</a></p>
+            <button onclick="window.location.href = 'LoginServlet'">Voltar</button>
+        </div>
+    </body>
+</html>
